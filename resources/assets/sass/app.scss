@@ -1,0 +1,131 @@
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+html
+{
+    font-family: sans-serif;
+
+        -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+html,
+body,
+main
+{
+    font-family: 'Raleway';
+    font-size: 14px;
+
+    height: 100%;
+
+    color: #ecf0f1;
+}
+
+li
+{
+    list-style: none;
+}
+
+a,
+a:hover
+{
+    text-decoration: none;
+}
+
+// Make Bootstrap columns heigh equal 
+.row
+{
+    overflow: hidden;
+}
+
+[class*='col-']
+{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+// Make Bootstrap columns heigh equal 
+
+.section-heading
+{
+    font-size: 2em;
+    font-weight: 400;
+
+    display: inline-block;
+
+    padding: 15px;
+
+    border: 3px solid;
+}
+
+footer
+{
+    margin: 0;
+    padding: 15px 0;
+
+    background-color: #fff;
+    h2
+    {
+        font-family: 'Raleway';
+        font-size: 1.2em;
+        font-weight: 400;
+
+        margin: 0;
+
+        color: #2e2633;
+    }
+}
+
+// Partials 
+@import 'resources/assets/sass/partials/main-section';
+@import 'resources/assets/sass/partials/about-section';
+@import 'resources/assets/sass/partials/skills-section';
+@import 'resources/assets/sass/partials/projects-section';
+@import 'resources/assets/sass/partials/contact-section';
+
+// #timeline
+// {
+//     ul {
+//         padding: 0;
+//     }
+
+//     padding: 50px 0 50px 0;
+
+//     background-image: linear-gradient(rgba(46,46,46,.92), rgba(46,46,46,.92)), url(/images/portfolio-timeline.jpg);
+//     background-attachment: fixed;
+
+
+//     @media only screen and (max-width: 767px) {
+//         text-align: center;
+//         a {
+//             font-size: 1.2em;
+//         }
+
+//         .timeline-heading {
+//             border:none;
+//             color: inherit;
+//             margin: 0;
+//             padding: 0;
+//         }
+
+//         .small-line {
+//             margin: 10px auto 40px auto;
+//             border-color: #3498db;
+//             width: 35px;
+//             border-top: 3px solid #3498db;
+//             bottom: 4px;
+//         }
+
+//     }
+
+//     @media only screen and (min-width: 768px) {
+//         .small-line {
+//             display: none;
+//         }
+//     }
+// }
+
+// .timeline-heading {
+//     @extend .section-heading;
+//     color: #69D2E7;
+//     border-color: #69D2E7;
+//     margin-bottom: 60px;
+
+// }

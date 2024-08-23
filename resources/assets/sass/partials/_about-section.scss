@@ -1,0 +1,181 @@
+#about
+{
+    background-color: #dd7366;
+}
+
+.about-me
+{
+    background-color: #2e2633;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .about-heading,
+    .profile-heading
+    { 
+        font-size: 2rem;
+
+        display: block;
+
+        margin: 0;
+        padding: 0;
+
+        text-align: center;
+
+        color: inherit;
+        border: none;
+    }
+
+    .about-col
+    {
+        padding: 80px 15px;
+    }
+
+    .about-col
+    {
+        .small-line
+        {
+            bottom: 4px;
+
+            width: 35px;
+            margin: 10px auto 40px auto;
+
+            border-top: 3px solid #2e2e2e;
+        }
+    }
+
+    .profile-col
+    {
+        text-align: center;
+        .small-line
+        {
+            bottom: 4px;
+
+            width: 35px;
+            margin: 10px auto 40px auto;
+
+            border-top: 3px solid #69d2e7;
+        }
+        ul
+        {
+            .small-line
+            {
+                width: 20px;
+
+                border-top: 2px solid #69d2e7;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px)
+{
+    .about-col
+    {
+        .small-line
+        {
+            display: none;
+        }
+    }
+
+    .about-heading,
+    .profile-heading
+    {
+        margin: 0 0 50px 0;
+    }
+
+    .about-col
+    {
+        padding: 80px 65px 80px 0;
+    }
+
+    .profile-col
+    {
+        .small-line:first-of-type
+        {
+            display: none;
+        }
+        ul
+        {
+            .small-line:first-of-type
+            {
+                display: block;
+            }
+        }
+    }
+}
+
+.about-col
+{
+    background-color: #dd7366;
+    p
+    {
+        font-family: 'Raleway';
+        font-size: 1.18em;
+
+        margin: 0;
+
+        text-align: left;
+    }
+}
+
+.about-heading
+{
+    color: #2e2e2e;
+    border-color: #2e2e2e;
+
+    @extend .section-heading;
+}
+
+.prf-clr
+{
+    background-color: #2e2633;
+}
+
+.profile-col
+{
+    padding: 80px 60px 80px 65px;
+
+    background-color: #2e2633;
+    ul
+    {
+        padding: 0;
+        li
+        {
+            font-size: 1.15em;
+            font-weight: 400;
+
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+
+            color: #ecf0f1;
+            p
+            {
+                font-size: 1.25em;
+
+                margin: 0;
+            }
+        }
+    }
+}
+
+.profile-heading
+{
+    color: #69d2e7;
+    border-color: #69d2e7;
+
+    @extend .section-heading;
+}
+
+.small-line
+{
+    position: relative;
+
+    width: 20px;
+    margin-top: 6px;
+    margin-bottom: 30px;
+
+    border-top: 2px solid #69d2e7;
+}
